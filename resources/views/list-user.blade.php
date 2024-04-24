@@ -36,11 +36,8 @@
                 <td>{{ $item['email'] }}</td>
                 <td>{{ $item['alamat'] }}</td>
                 <td>
-                    {{-- <a href="/add-album/{{ $item->id }}" class="btn btn-sm btn-primary">Tambah Foto</a> --}}
-                    {{-- <a href="/album/{{ $item->id }}/edit/" class="btn btn-sm btn-warning">Edit Album</a> --}}
                     <a href="#modalHapusAlbum{{ $item->id }}" data-bs-toggle="modal" data-bs-target="#modalHapusAlbum{{ $item->id }}" class="btn btn-sm btn-danger">Hapus User</a>
-                    {{-- <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#modalHapusAlbum{{ $item->id }}">Hapus Album</button> --}}
-                    <!-- Modal untuk menghapus -->
+                    {{-- Modal untuk menghapus --}}
                     <div class="modal fade" id="modalHapusAlbum{{ $item->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
